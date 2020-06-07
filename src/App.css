@@ -1,0 +1,84 @@
+h3{
+  color: var(--text);
+}
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+.pomo{
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  background-color: #f4f7fc;
+  padding: 1.25rem 2.5rem;
+  border-radius: 10px;
+}
+
+.btn-container,.session-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-container div {
+  font-size: 2rem;
+  align-self: center;
+}
+
+#time-left {
+text-align: center;
+font-size: 4rem;
+margin: 1rem;
+color: var(--primary);
+}
+
+button {
+  display: block;
+  text-align: center;
+  font-weight: bold; 
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  background: var(--sec);
+  pointer-events: visible;
+  color: #fefefe;
+  border-color: #ddd;
+  min-width: 17%;
+  transition: all ease-in 0.25s;
+  font-size: 1.6rem;
+  line-height: 0.5em;
+  padding: 1rem 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  outline:none;
+}
+
+button:active{
+  transform: scale(0.95);
+}
+
+.timer-container button{
+  margin: 0.5rem 0 0.5rem auto;
+}
+
+@media all and (max-width:500px){
+  .parent{
+    display: block;
+  }
+  .pomo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  button {
+    background: var(--primary);
+  }
+  #time-left{
+    color: var(--sec);
+    font-size: 6rem;
+  }
+}
